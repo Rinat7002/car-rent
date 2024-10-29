@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Car Rental Service</h1>
+        <input type="text" id="searchInput" placeholder="Search by car name..." onkeyup="filterCars()">
+        <select id="priceFilter" onchange="filterCars()">
+            <option value="all">All Prices</option>
+            <option value="100">Below $100</option>
+            <option value="200">Below $200</option>
+            <option value="300">Below $300</option>
+        </select>
+        <button onclick="sortCars()">Sort by Price</button>
+    </header>
+    <main id="car-list">
+        <!-- Cars will be dynamically loaded here -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
