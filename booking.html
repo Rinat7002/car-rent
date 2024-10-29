@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Car Booking</h1>
+  </header>
+  <main>
+    <form id="booking-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="rent-duration">Rental Duration:</label>
+      <input type="number" id="rent-duration" min="1" required>
+      <label for="insurance">Insurance Package:</label>
+      <select id="insurance">
+        <option value="basic">Basic</option>
+        <option value="premium">Premium</option>
+      </select>
+      <button type="button" onclick="location.href='payment.html'">Proceed to Payment</button>
+    </form>
+  </main>
+</body>
+</html>
