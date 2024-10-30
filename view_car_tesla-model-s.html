@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Просмотр Tesla Model S</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Детали Tesla Model S</h1>
+    <nav>
+      <button onclick="location.href='index.html'">Главная страница</button>
+      <button onclick="location.href='rental-report.html'">Отчеты о прокате</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="car-details" style="display: flex; justify-content: center; align-items: flex-start; gap: 1.5em; margin: 2em;">
+      <div class="car-image">
+        <img src="img/tesla.png" alt="Tesla Model S" style="width: 300px; height: auto;">
+      </div>
+      <div class="car-info" style="display: flex; flex-direction: column; gap: 1em;">
+        <h2>Tesla Model S</h2>
+        <p>Электрический автомобиль с высокой производительностью.</p>
+        <p>Цена: 15000 ₽ / день</p>
+
+        <div>
+          <label for="start-date">Дата начала аренды:</label>
+          <input type="date" id="start-date" required>
+        </div>
+
+        <div>
+          <label for="rent-duration">Срок аренды (дней):</label>
+          <input type="number" id="rent-duration" min="1" required>
+        </div>
+
+        <div>
+          <label for="insurance">Пакет страховки:</label>
+          <select id="insurance">
+            <option value="basic">Базовый</option>
+            <option value="premium">Премиум</option>
+            <option value="osago">ОСАГО</option>
+            <option value="kasko">КАСКО</option>
+          </select>
+        </div>
+
+        <div>
+            <label for="child-seat">Детское сиденье:</label>
+            <select id="child-seat">
+              <option value="none">Нет</option>
+              <option value="yes">Да</option>
+            </select>
+          </div>
+  
+          <div>
+            <label for="gps">Личный водитель</label>
+            <select id="gps">
+              <option value="none">Нет</option>
+              <option value="yes">Да</option>
+            </select>
+          </div>
+
+        <button onclick="location.href='booking.html'" style="margin-top: 1em;">Забронировать</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="#">Правила аренды</a> | <a href="#">Политика компании</a> | <a href="#">Политика конфиденциальности данных</a></p>
+  </footer>
+</body>
+</html>

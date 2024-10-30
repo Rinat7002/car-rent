@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оплата</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-footer-fixed.css">
+
+</head>
+<body>
+  <header>
+    <h1>Оплата</h1>
+    <nav>
+      <button onclick="location.href='index.html'">Главная страница</button>
+      <button onclick="location.href='rental-report.html'">Отчеты о прокате</button>
+    </nav>
+  </header>
+
+  <main>
+    <form id="payment-form">
+      <label for="card-number">Номер карты:</label>
+      <input type="text" id="card-number" required>
+      <label for="expiration">Дата окончания:</label>
+      <input type="text" id="expiration" placeholder="MM/YY" required>
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" required>
+      <p>Итоговая стоимость: <span id="total-price">25000 ₽</span></p>
+      <button type="submit" onclick="location.href='confirmation.html'">Подтвердить оплату</button>
+    </form>
+  </main>
+
+  <footer>
+    <p><a href="#">Правила аренды</a> | <a href="#">Политика компании</a> | <a href="#">Политика конфиденциальности данных</a></p>
+  </footer>
+</body>
+</html>
