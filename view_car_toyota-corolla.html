@@ -9,7 +9,11 @@
 <body>
   <header>
     <h1>Детали Toyota Corolla</h1>
+    <nav>
+      <button onclick="location.href='index.html'">Главная страница</button>
+    </nav>
   </header>
+
   <main>
     <section id="car-details" style="display: flex; gap: 1.5em; align-items: flex-start;">
       <div class="car-image">
@@ -19,8 +23,7 @@
         <h2>Toyota Corolla</h2>
         <p>Компактный и экономичный автомобиль для города.</p>
         <p>Цена: 5000 ₽ / день</p>
-        
-        <!-- Выбор параметров для аренды -->
+
         <label for="start-date">Дата начала аренды:</label>
         <input type="date" id="start-date" required>
 
@@ -32,10 +35,14 @@
           <option value="basic">Базовый</option>
           <option value="premium">Премиум</option>
         </select>
-        
+
         <button onclick="location.href='booking.html'" style="margin-top: 1em;">Забронировать</button>
       </div>
     </section>
   </main>
+
+  <footer>
+    <p><a href="#">Правила аренды</a> | <a href="#">Политика компании</a> | <a href="#">Политика конфиденциальности данных</a></p>
+  </footer>
 </body>
 </html>

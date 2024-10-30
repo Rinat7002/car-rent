@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подтверждение бронирования</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Подтверждение бронирования</h1>
+    <nav>
+        <button onclick="location.href='index.html'">Главная страница</button>
+      </nav>
+  </header>
+  <main>
+    <p>Информация о бронировании:</p>
+    <p>Имя: Иван Иванов</p>
+    <p>Автомобиль: Toyota Corolla</p>
+    <p>Дата аренды: 15 ноября 2024</p>
+    <p>Срок аренды: 5 дней</p>
+    <p>Цена: 25000 ₽</p>
+    
+    <button onclick="confirmBooking()">Подтвердить бронирование</button>
+    <button onclick="cancelBooking()">Отменить бронирование</button>
+
+    <p><a href="#">Договор оказания услуг</a> | <a href="#">Документы аренды</a> | <a href="#">Чек об оплате</a></p>
+  </main>
+
+  <script>
+    function confirmBooking() {
+      alert('Автомобиль будет ждать вас по адресу: ул. Примерная, 10');
+    }
+    function cancelBooking() {
+      alert('Бронирование отменено. Возврат средств произведен.');
+    }
+  </script>
+  <footer>
+    <p><a href="#">Правила аренды</a> | <a href="#">Политика компании</a> | <a href="#">Политика конфиденциальности данных</a></p>
+  </footer>
+</body>
+</html>

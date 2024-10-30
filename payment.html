@@ -9,26 +9,26 @@
 <body>
   <header>
     <h1>Оплата</h1>
+    <nav>
+      <button onclick="location.href='index.html'">Главная страница</button>
+    </nav>
   </header>
+
   <main>
-    <form id="payment-form" onsubmit="processPayment(event)">
+    <form id="payment-form">
       <label for="card-number">Номер карты:</label>
       <input type="text" id="card-number" required>
-
-      <label for="expiration">Дата истечения:</label>
-      <input type="text" id="expiration" placeholder="ММ/ГГ" required>
-
+      <label for="expiration">Дата окончания:</label>
+      <input type="text" id="expiration" placeholder="MM/YY" required>
       <label for="cvv">CVV:</label>
       <input type="text" id="cvv" required>
-      
-      <button type="submit">Подтвердить оплату</button>
+      <p>Итоговая стоимость: <span id="total-price">15000 ₽</span></p>
+      <button type="submit" onclick="location.href='confirmation.html'">Подтвердить оплату</button>
     </form>
   </main>
-  <script>
-    function processPayment(event) {
-      event.preventDefault();
-      alert("Оплата прошла успешно!");
-    }
-  </script>
+
+  <footer>
+    <p><a href="#">Правила аренды</a> | <a href="#">Политика компании</a> | <a href="#">Политика конфиденциальности данных</a></p>
+  </footer>
 </body>
 </html>
