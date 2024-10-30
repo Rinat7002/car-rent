@@ -5,39 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Отчет о прокате авто</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-footer-fixed.css">
+
 </head>
 <body>
   <header>
     <h1>Отчет о прокате автомобилей</h1>
     <nav>
         <button onclick="location.href='index.html'">Главная страница</button>
+        <button onclick="location.href='rental-report.html'">Отчеты о прокате</button>
       </nav>
   </header>
   
   <main>
-    <table>
-      <thead>
-        <tr>
-          <th>Автомобиль</th>
-          <th>Гос. номер</th>
-          <th>Дата</th>
-          <th>Время аренды</th>
-          <th>Цена</th>
-          <th>Километраж</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Toyota Corolla</td>
-          <td>A123BC</td>
-          <td>15.10.2024</td>
-          <td>3 дня</td>
-          <td>15000 ₽</td>
-          <td>300 км</td>
-        </tr>
-        <!-- Добавить еще 4 записи -->
-      </tbody>
-    </table>
+
+    <div class="rental-report-info">
+        <table>
+          <thead>
+            <tr>
+              <th>Автомобиль</th>
+              <th>Гос. номер</th>
+              <th>Дата</th>
+              <th>Время аренды</th>
+              <th>Цена</th>
+              <th>Километраж</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Toyota Corolla</td>
+              <td>A123BC</td>
+              <td>15.10.2024</td>
+              <td>3 дня</td>
+              <td>15000 ₽</td>
+              <td>300 км</td>
+            </tr>
+            <!-- Добавить еще 4 записи -->
+          </tbody>
+        </table>
+    </div>
+
+
   </main>
   <footer>
     <p><a href="#">Правила аренды</a> | <a href="#">Политика компании</a> | <a href="#">Политика конфиденциальности данных</a></p>

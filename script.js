@@ -1,8 +1,8 @@
 // Данные автомобилей с типами на русском
 const cars = [
-  { name: 'Toyota Corolla', price: 5000, image: 'img/toyota.png', type: 'седан', color: 'белый' },
-  { name: 'Ford Mustang', price: 12000, image: 'img/mustang.png', type: 'кроссовер', color: 'красный' },
-  { name: 'Tesla Model S', price: 15000, image: 'img/tesla.png', type: 'седан', color: 'черный' },
+  { name: 'Toyota Corolla', price: 5000, image: 'img/toyota.png', type: 'седан', color: 'черный' },
+  { name: 'Ford Mustang', price: 12000, image: 'img/mustang.png', type: 'кроссовер', color: 'черный' },
+  { name: 'Tesla Model S', price: 15000, image: 'img/tesla.png', type: 'седан', color: 'белый' },
   { name: 'Chevrolet Camaro', price: 11000, image: 'img/camaro.jpg', type: 'внедорожник', color: 'красный' }
 ];
 
