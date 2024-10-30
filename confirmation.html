@@ -6,31 +6,34 @@
   <title>Подтверждение бронирования</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style-footer-fixed.css">
-
 </head>
 <body>
   <header>
     <h1>Подтверждение бронирования</h1>
     <nav>
-        <button onclick="location.href='index.html'">Главная страница</button>
-        <button onclick="location.href='rental-report.html'">Отчеты о прокате</button>
-      </nav>
+      <button onclick="location.href='index.html'">Главная страница</button>
+      <button onclick="location.href='rental-report.html'">Отчеты о прокате</button>
+    </nav>
   </header>
   <main>
-
     <div class="booking-info">
+      <p>Информация о бронировании:</p>
+      <p>Имя: Иван Иванов</p>
+      <p>Автомобиль: Toyota Corolla</p>
+      <p>Дата аренды: 15 ноября 2024</p>
+      <p>Срок аренды: 5 дней</p>
+      <p>Цена: 25000 ₽</p>
+      
+      <button onclick="confirmBooking()">Подтвердить бронирование</button>
+      <button onclick="cancelBooking()">Отменить бронирование</button>
 
-        <p>Информация о бронировании:</p>
-        <p>Имя: Иван Иванов</p>
-        <p>Автомобиль: Toyota Corolla</p>
-        <p>Дата аренды: 15 ноября 2024</p>
-        <p>Срок аренды: 5 дней</p>
-        <p>Цена: 25000 ₽</p>
-        
-        <button onclick="confirmBooking()">Подтвердить бронирование</button>
-        <button onclick="cancelBooking()">Отменить бронирование</button>
+      <!-- Добавленные ссылки на документы -->
+      <div class="document-links" style="margin-top: 1em;">
+        <p><a href="#">Договор оказания платных услуг</a></p>
+        <p><a href="#">Документы аренды</a></p>
+        <p><a href="#">Чек об оплате</a></p>
+      </div>
     </div>
-
   </main>
 
   <script>
