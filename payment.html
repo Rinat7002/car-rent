@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment</title>
+  <title>Оплата</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Payment</h1>
+    <h1>Оплата</h1>
   </header>
   <main>
-    <form id="payment-form">
-      <label for="card-number">Card Number:</label>
+    <form id="payment-form" onsubmit="processPayment(event)">
+      <label for="card-number">Номер карты:</label>
       <input type="text" id="card-number" required>
-      <label for="expiration">Expiration Date:</label>
-      <input type="text" id="expiration" placeholder="MM/YY" required>
+
+      <label for="expiration">Дата истечения:</label>
+      <input type="text" id="expiration" placeholder="ММ/ГГ" required>
+
       <label for="cvv">CVV:</label>
       <input type="text" id="cvv" required>
-      <button type="submit">Confirm Payment</button>
+      
+      <button type="submit">Подтвердить оплату</button>
     </form>
   </main>
+  <script>
+    function processPayment(event) {
+      event.preventDefault();
+      alert("Оплата прошла успешно!");
+    }
+  </script>
 </body>
 </html>

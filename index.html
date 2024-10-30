@@ -1,22 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Car Rental</title>
+  <title>Аренда автомобилей</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Car Rental Service</h1>
-    <input type="text" id="search-bar" placeholder="Search by name...">
-    <select id="price-filter">
-      <option value="all">All Prices</option>
-      <option value="low">Below $50</option>
-      <option value="mid">Between $50-$100</option>
-      <option value="high">Above $100</option>
+    <h1>Сервис аренды автомобилей</h1>
+    <input type="text" id="search-bar" placeholder="Поиск по названию...">
+    
+    <label for="price-range">Диапазон цены:</label>
+    <input type="number" id="price-min" placeholder="от" min="0"> ₽
+    <input type="number" id="price-max" placeholder="до" min="0"> ₽
+    <button onclick="filterCars()">Показать</button>
+    
+    <label for="type-filter">Тип авто:</label>
+    <select id="type-filter">
+      <option value="all">Все типы</option>
+      <option value="седан">Седан</option>
+      <option value="внедорожник">Внедорожник</option>
+      <option value="кроссовер">Кроссовер</option>
+    </select>
+    
+    <label for="color-filter">Цвет:</label>
+    <select id="color-filter">
+      <option value="all">Все цвета</option>
+      <option value="белый">Белый</option>
+      <option value="черный">Черный</option>
+      <option value="красный">Красный</option>
     </select>
   </header>
+
   <main id="car-catalog">
     <!-- Cars will be dynamically loaded here -->
   </main>
